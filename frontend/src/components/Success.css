@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+  
+.success-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.header {
+    background-color: #547887;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+  
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+  
+.title h2 {
+    color: #4ca7af;
+    font-size: 1.8rem;
+}
+  
+.details-container {
+    margin: 20px 0;
+}
+  
+.row {
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    gap: 10px; /* Add space between fields */
+}
+  
+.det-cont {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+}
+  
+label {
+    color: #0093a1;
+    font-weight: bold;
+    min-width: 150px; /* Ensures labels align vertically */
+    text-align: left;
+}
+  
+span {
+    flex: 1; /* Allows span to take the remaining space */
+    color: #333;
+    font-size: 1rem;
+}
+  
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.footer a {
+    text-decoration: none;
+    color: white;
+    background-color: #2d637a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+  
+.footer a:hover {
+    background-color: #4ba3c9;
+}

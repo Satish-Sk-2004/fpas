@@ -1,0 +1,125 @@
+/* src/App.css */
+
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css"; /* If not imported in App.jsx */
+
+/* Existing Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("./assets/college.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container, .message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-form, .message-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 60px;
+  color: #a5e4ff;
+  margin-bottom: 10px;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #016979;
+}
+
+.input-field {
+  width: 92%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 24px;
+  background-color: #2d637a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #4ba3c9;
+  transition: background-color 0.3s ease;
+}
+
+.forgot-password {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.forgot-password a {
+  color: #b8a89a;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for Success and Failure Pages */
+.message-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.message-container h2 {
+  color: #2d637a;
+  margin-bottom: 20px;
+}
+
+.message-container p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.message-container a {
+  color: #2d637a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.message-container a:hover {
+  text-decoration: underline;
+}
+
+.user-info {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.user-info p {
+  margin: 5px 0;
+}
