@@ -60,6 +60,48 @@ app.post('/login', async (req, res) => {
   }
 });
 
+app.post('/postdata', async (req, res) => {
+  const { skillsets } = req.body;
+
+  if (!skillsets || typeof skillsets !== 'object') {
+    return res.status(400).json({ message: 'Invalid data format.' });
+  }
+
+  try {
+    const db = client.db(dbName);
+    const collection = db.collection(dataCollection);
+
+    // Insert data into the collection
+    const result = await collection.insertOne({ skillsets });
+    res.status(201).json({ message: 'Data saved successfully', dataId: result.insertedId });
+  } catch (error) {
+    console.error('Error saving data:', error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
+// Endpoint to GET Faculty Performance Data by Key
+app.get('/getdata/:key', async (req, res) => {
+  const { key } = req.params;
+
+  try {
+    const db = client.db(dbName);
+    const collection = db.collection(dataCollection);
+
+    // Find data in the collection
+    const data = await collection.findOne({ [`skillsets.${key}`]: { $exists: true } });
+
+    if (data) {
+      res.status(200).json({ message: 'Data retrieved successfully', data: data.skillsets[key] });
+    } else {
+      res.status(404).json({ message: 'No data found for the given key.' });
+    }
+  } catch (error) {
+    console.error('Error retrieving data:', error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
 // Start the Server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

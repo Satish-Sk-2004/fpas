@@ -1,11 +1,12 @@
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import './Success.css'; 
+import FacultyForm from './FacultyForm';
 
 function Success() {
   const location = useLocation();
   const { user } = location.state || {};
-
+  console.log('User:', user);
   return (
     <div className="success-container">
       <div className="header">
@@ -42,6 +43,8 @@ function Success() {
       <div className="footer">
         <Link to="/">Go Back to Login</Link>
       </div>
+
+      <FacultyForm user={user }/>
     </div>
   );
 }

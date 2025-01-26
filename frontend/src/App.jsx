@@ -14,7 +14,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/success" element={<Success />} />
+        <Route path="/success/" element={<Success />} />
         <Route path="/failure" element={<Failure />} />
         {/* <Route path="/years3" element={<Years3/>}></Route> */}
       </Routes>

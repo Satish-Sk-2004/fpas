@@ -1,6 +1,5 @@
 /* src/App.css */
 
-@import "../node_modules/@fortawesome/fontawesome-free/css/all.css"; /* If not imported in App.jsx */
 
 /* Existing Styles */
 body {
@@ -122,60 +121,4 @@ body {
 
 .user-info p {
   margin: 5px 0;
-}
-.faculty-appraisal-form {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: #f2f2f2;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.faculty-appraisal-form h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #333;
-}
-
-.faculty-appraisal-form .form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.5rem;
-}
-
-.faculty-appraisal-form label {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: #555;
-}
-
-.faculty-appraisal-form input,
-.faculty-appraisal-form select {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-
-.faculty-appraisal-form input:focus,
-.faculty-appraisal-form select:focus {
-  outline: none;
-  border-color: #4CAF50;
-}
-
-.faculty-appraisal-form button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.faculty-appraisal-form button[type="submit"]:hover {
-  background-color: #45a049;
 }

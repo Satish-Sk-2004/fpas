@@ -6,7 +6,7 @@ body {
 }
   
 .success-container {
-    max-width: 900px;
+    max-width: 100%;
     margin: 20px auto;
     background-color: white;
     padding: 20px;
